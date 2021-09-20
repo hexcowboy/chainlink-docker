@@ -19,6 +19,8 @@ To configure your node, place your [environment file](https://docs.chain.link/do
     └── .env
 ```
 
+**⚠️ The existing `.env` file contains information that should not be overwritten. Instead, append your configuration to the file.**
+
 ### Running
 
 Use `docker-compose` to get your full node up and running.
