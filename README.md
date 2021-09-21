@@ -1,6 +1,6 @@
-# ChainLink Full Node
+# Chainlink Full Node
 
-Uses the official ChainLink [Docker images](https://hub.docker.com/r/smartcontract/chainlink) in combination with the official [Postgres images](https://hub.docker.com/_/postgres) to deploy a full node. This works on any machine that can run Docker *(Linux, macOS, Windows)*, provided the machine meets the [minimum requirements](https://docs.chain.link/docs/running-a-chainlink-node).
+Uses the official Chainlink [Docker images](https://hub.docker.com/r/smartcontract/chainlink) in combination with the official [Postgres images](https://hub.docker.com/_/postgres) to deploy a full node. This works on any machine that can run Docker *(Linux, macOS, Windows)*, provided the machine meets the [minimum requirements](https://docs.chain.link/docs/running-a-chainlink-node).
 
 ## Setup
 
