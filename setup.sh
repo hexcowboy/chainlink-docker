@@ -51,6 +51,7 @@ while true; do
     echo "Passwords do not match."
 done
 
+mkdir -p chainlink
 echo "${chainlink_password}" > chainlink/credentials.txt
 
 echo
