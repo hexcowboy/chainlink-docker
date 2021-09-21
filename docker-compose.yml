@@ -1,0 +1,32 @@
+services:
+  chainlink:
+    image: smartcontract/chainlink:0.10.14
+    # build: .
+    command: >
+      local node
+      -p /srv/credentials.txt
+      -a /srv/api.txt
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - chainlink.env
+    ports:
+      - "6688:6688"
+    volumes:
+      - ./chainlink/:/srv
+
+  postgres:
+    image: postgres
+    command: >
+      -c ssl=on
+      -c ssl_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+      -c ssl_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+    env_file:
+      - postgres.env
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
