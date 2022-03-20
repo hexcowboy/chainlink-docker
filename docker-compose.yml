@@ -1,6 +1,6 @@
 services:
   chainlink:
-    image: smartcontract/chainlink:0.10.14
+    image: smartcontract/chainlink
     # build: .
     command: >
       local node
