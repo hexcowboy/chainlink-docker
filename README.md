@@ -11,10 +11,10 @@ Uses the official Chainlink [Docker images](https://hub.docker.com/r/smartcontra
 
 ### Configuration
 
-Run the `configure.sh` file and follow the prompts to set up the environment.
+Run the `setup.sh` file and follow the prompts to set up the environment.
 
 ```bash
-$ bash configure.sh
+$ bash setup.sh
 ```
 
 Afterwards you can add custom configuration to the `.env` files before starting the node.
